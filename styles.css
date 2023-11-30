@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Nova+Square');
 @import url('https://fonts.googleapis.com/css?family=Audiowide');
-
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+@font-face {
+    font-family: Digital;
+    src: url("Fonts/ds_digital/DS-DIGIT.TTF");
+}
 
 body.home-background {
     margin: 0;
@@ -63,6 +67,10 @@ nav a {
     margin-left: 1em;
     font-family: 'Nova Square', sans-serif;
     font-size: 16px;
+    transition: background-color 0.3s ease-in-out;
+}
+nav a:hover {
+    background-color: rgba(79, 79, 79, 0.5); /* Grey semi-transparent background */
 }
 
 .WhiteNav {
@@ -94,6 +102,25 @@ nav a {
     padding-bottom: 0;
 }
 
+#countdown{
+    font-family: "Courier New", sans-serif;
+    font-size: 3em;
+}
+
+#countdown-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.countdown-number{
+    font-family: Digital, Serif, serif;
+    font-size: 4.5em;
+    color: #000000;
+}
+
 .packageImg{
     width: 300px;
 }
@@ -102,6 +129,10 @@ nav a {
     font-size: 2em;
     text-align: center;
     color: #ffffff;
+}
+
+.PDescription{
+    font-family: 'Source Code Pro', monospace;
 }
 
 body {
@@ -135,6 +166,23 @@ body {
     color: #ffffff;
 }
 
+.experienceImg {
+    background-color: rgba(65, 0, 155, 0.6);
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+.experienceImg img {
+    max-width: 100%;
+    height: auto;
+}
+
+.EDescription{
+    font-family: 'Source Code Pro', monospace;
+    color: #030000;
+}
+
 .time {
     text-align: center;
     font-family: 'Nova Square', sans-serif;
@@ -155,3 +203,4 @@ form {
     text-align: center;
     color: #eae8e8;
 }
+
