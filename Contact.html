@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <title>Galactic Gateways | Contact</title>
+</head>
+<body class="contact-background">
+    <header>
+        <div>
+            <img src="Media/Galactic%20Gateways-logos_transparent.png" alt="starship" class="ULCorner">
+            <nav class="WhiteNav">
+                <a href="index.html">Home</a>
+                <a href="Packages.html">Packages</a>
+                <a href="experiences.html">Experiences</a>
+                <a href="Contact.html">Contact</a>
+            </nav>
+        </div>
+    </header>
+    <h1 class="time">Current Time on Mars:</h1>
+    <p class="time" id="currentTime"></p>
+    <script>
+        // Get the current date
+        const currentDate = new Date();
+
+        // Extract the hour and minute
+        const hours = currentDate.getHours();
+        const minutes = currentDate.getMinutes();
+
+        // Format the time as a string
+        const formattedTime = `${hours}:${minutes < 10 ? '0' : ''}${minutes}`;
+
+        // Display the time in the HTML element with id "currentTime"
+        document.getElementById('currentTime').textContent = formattedTime;
+    </script>
+
+<h2 class="contact">Contact Us</h2>
+    <div align="center">
+        <form action="mailto:your-email@example.com" method="post" enctype="text/plain">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <br>
+            <label for="package">Interested Package:</label>
+            <select id="package" name="package" required>
+                <option value="" disabled selected>Select Package</option>
+                <option value="lunarEscape">Lunar Escape</option>
+                <option value="marsOdyssey">Mars Odyssey</option>
+                <option value="interstellarAdventure">Interstellar Adventure</option>
+            </select>
+            <br>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            <br>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </form>
+    </div>
+
+
+
+
+</body>
+</html>
